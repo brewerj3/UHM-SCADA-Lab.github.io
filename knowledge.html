@@ -54,8 +54,41 @@
 
 <hr class="bg border-1 border-top border-dark">
 
-<!-- Useful Information -->
-<h2>Useful Information</h2>
+<!-- Useful Links -->
+<h2>Useful Links</h2>
+<h5><strong>Development Tools</strong></h5>
+<p>These are the standard development tools utilized by our team to develop the website.</p>
+<div class="list">
+  <ul>
+    <li><a href="https://www.jetbrains.com/idea/download/"><strong>IntelliJ IDEA</strong></a>: Integrated Development Environment (IDE)</li>
+    <li><a href="https://desktop.github.com/"><strong>Github Desktop</strong></a>: Simplifies Git development workflow</li>
+  </ul>
+</div>
+<h5><strong>Additional Resources</strong></h5>
+<div class="list">
+  <ul>
+    <li><a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/"><strong>Bootstrap 5</strong></a>: The CSS framework this website is built with
+      <ul>
+        <li><a href="/DepartmentPages/Knowledge/bootstrap-tips.html">Additional Bootstrap Tips</a></li>
+      </ul>
+    </li>
+    <li><a href="https://www.w3schools.com/html/default.asp"><strong>HTML/CSS tutorial (W3Schools)</strong></a></li>
+    <li><a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/"><strong>HTML/CSS tutorial (freeCodeCamp)</strong></a></li>
+  </ul>
+</div>
+
+<hr class="bg border-1 border-top border-dark">
+
+<!-- Tutorials -->
+<h2>Tutorials</h2>
+
+<h5><strong>Setting up the development environment</strong></h5>
+<div class="list">
+  <ul>
+    <li><a href="/Media/installing_intellij_github.pdf"><strong>Installation Guide</strong></a>: Instructions for how to install and configure Intellij IDEA and Github Desktop</li>
+    <li><a href="/Media/developer_guide.pdf"><strong>Developer Guide</strong></a>: Instructions for how to create a fork of the website repository and update the website</li>
+  </ul>
+</div>
 
 <!-- Code Skeleton for new page -->
 <h5><strong>Creating a new page for the website</strong></h5>
@@ -64,7 +97,7 @@
 <img src="Media/syncfork.png" class="w-75 pic"/>
 <p>On Github Desktop, open your forked repository and make sure to click <em>Fetch origin</em> (or <em>Fetch upstream</em>, depending on your setup). This will update your local copy of the repository with all the latest changes.</p>
 <img src="Media/fetch.png" class="w-75 pic"/>
-<p>Once you have verified that your fork and local copy are up to date, you can begin to make edits. To add a new page to the website, a new HTML file must be created within the appropriate folder in <code>DepartmentPages</code>. For example, the page for the ML Curricula's zero trust documentation is stored at <code>DepartmentPages/MachineLearning/zero-trust.html</code>.</p>
+<p>Once you have verified that your fork and local copy are up to date, you can begin to make edits. To add a new page to the website, a new HTML file must be created within the appropriate folder in <code>DepartmentPages</code>. For example, the page for the ML Curricula team's zero trust documentation is stored at <code>DepartmentPages/MachineLearning/zero-trust.html</code>.</p>
 <p>Each page file should use the same header structure that has been established for all the pages on the website. This will, among other things, allow for the page to have the same formatting as the pre-existing pages and import key components, such as the navigation bar and footer.</p>
 <p>One option that you have is to copy and paste the HTML template below into your new file.</p>
 <div class="code">
@@ -105,50 +138,14 @@
 </div>
 
 <p>You also have the option to import the template into your Intellij settings, which will allow you to easily create new HTML files with the code structure already included by default.</p>
-<p>Download the settings ZIP file <a href="https://drive.google.com/file/d/140bonyCJBxi3A24aI_PW3Vv5oDC_JAUD/view?usp=sharing">here</a>, which includes our HTML template. In order to import it to Intellij, go to File > Manage IDE Settings > Import Settings... and select the ZIP file you just downloaded. You should see a prompt like this. Make sure <em>File Templates (schemes)</em> is checked, as shown below.</p>
+<p>Download the settings ZIP file <a href="/Media/settings.zip">here</a>, which includes our HTML template. In order to import it to Intellij, go to File > Manage IDE Settings > Import Settings... and select the ZIP file you just downloaded. You should see a prompt like this. Make sure <em>File Templates (schemes)</em> is checked, as shown below.</p>
 <img src="Media/template.PNG" class="w-75 pic"/>
 <p>Intellij will then prompt you to restart the application for the changes to take effect.</p>
 <p>Once that process is complete, you can now add new files to the repository with the template! Add a new file as shown below by selecting the SCADA HTML file type. You should then see a new file with the template code automatically included.</p>
 <img src="Media/newTemplateFile.PNG" class="w-75 pic"/>
-<!-- HTML Link tutorial -->
-<h5><strong>Creating a link in HTML</strong></h5>
-<div class="pre code">
-  <pre>
-    <code>
-      &lt;a href="NewPage.html">Link to New Page&lt;/a>
-    </code>
-  </pre>
-  <pre>
-    <code>
-      <a href="DepartmentPages/Knowledge/NewPage.html">Link to New Page</a>
-    </code>
-  </pre>
-</div>
-<hr class="bg border-1 border-top border-dark">
-
-<div class="table table-responsive">
-  <table class="table table-sm table-striped table-bordered">
-    <thead>
-    <tr>
-      <th scope="col" colspan="2">Links</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-      <th scope="row">Bootstrap 5: The framework this website is built with</th>
-      <td><a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/">getbootstrap.com</a></td>
-    </tr>
-    <tr>
-      <th scope="row">HTML/CSS Tutorials</th>
-      <td><a href="https://www.w3schools.com/html/default.asp">Tutorial</a></td>
-    </tr>
-    </tbody>
-  </table>
-</div>
 
 <!-- Footer -->
 <div id="footer"></div>
-
 
 </body>
 </html>
